@@ -1,10 +1,8 @@
 $( document ).ready(function(){
-
     $('form').submit(function(event) {
         sendAjaxForm('result_form', 'ajax_form', 'action_ajax_form.php')
         event.preventDefault();
     });
-
 });
 
 function sendAjaxForm(result_form, ajax_form, url) {
